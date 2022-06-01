@@ -1,7 +1,13 @@
 library manga_source;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+///
+/// A basic interface for creating a source.
+/// It could be an online source, a local source, etc...
+abstract class MangaSource {
+  final String id;
+  final String name;
+
+  MangaSource({required this.id, required this.name});
+
+  String get preferenceKey => "source_$id";
 }
