@@ -1,7 +1,8 @@
 name: manga_source
 description: Basic interface for creating a manga source.
 version: 1.0.0
-homepage: 
+
+publish_to: none
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
